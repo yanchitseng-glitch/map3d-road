@@ -25,3 +25,9 @@ description: Create and revise JJP architectural presentations from ChatGPT brie
    directory and repeat the checks. Mark review items only after inspection.
 5. Deliver the three exports and, when requested, a preview. Keep generated
    project content out of the repository unless the user requests storage.
+
+## Typography and line breaking
+
+- Avoid orphaned single characters and final lines of only one or two Chinese characters in titles and body copy. Preserve semantic phrases and balance title lines; do not split proper names or English words unnecessarily.
+- Prefer adjusting frame width, then editorial line breaks or concise wording, and only then modest font-size changes. Preserve grid and legibility.
+- Check punctuation placement and all rendered line endings in PPTX, PDF and HTML. Flag and correct short trailing lines before delivery; do not claim automatic validation unless implemented and tested.
