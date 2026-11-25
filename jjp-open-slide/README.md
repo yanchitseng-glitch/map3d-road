@@ -28,3 +28,18 @@ The framework's browser UI supplies PDF/PPTX export; do not use external slide g
 - Verify browser Agent Panel is visible by pressing `A` (authentication to an external Codex CLI is environment-dependent).
 - Use the official export UI for PDF/PPTX and check the output. The built static site is HTML and may be deployed separately.
 - Honor JJP ownership of images: no substituted building photography.
+
+## Verified CI result — 2026-11-25
+
+GitHub Actions run: https://github.com/yanchitseng-glitch/map3d-road/actions/runs/45640117848
+
+- Installed `@open-slide/core` and built with `npm run build`: **PASS**.
+- Started the official `open-slide dev` server: **PASS**.
+- Inspected `/s/architecture-of-care-2026/preview?p=1..15`: **15/15 READY**; no tagged text clipping or orphan one/two-character lines.
+- OpenSlide browser HTML export: **PASS**.
+- OpenSlide PDF print layout captured via Chromium `printToPDF`: **PASS**, 15 pages. The framework calls `window.print()`, so a headless browser does not emit a normal download event.
+- OpenSlide PPTX export: **PASS**, 15 slides, with native editable text nodes.
+- Agent Panel UI and `A` shortcut: **visible** in test; an authenticated interactive Codex CLI session was **not** verified.
+- Six real project photos remain missing; `ImagePlaceholder` controls are visible and intentionally require approved JJP images.
+
+The CI run artifact includes all screenshots, exported files and the QA summary.
