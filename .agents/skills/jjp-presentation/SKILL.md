@@ -1,33 +1,15 @@
 ---
 name: jjp-presentation
-description: Create and revise JJP architectural presentations from ChatGPT briefs, slide copy and local image assets. Use for JJP layouts, bilingual architectural decks and HTML, PDF or PPTX delivery.
+description: Create JJP architectural presentations using the official open-slide React framework.
 ---
 
-# JJP Presentation
+# JJP Presentation — OpenSlide
 
-1. Read `jjp-presentation/README.md` and consult `jjp-presentation/example.json`
-   for the brief format and all eight layouts. Check existing dependencies
-   before changing the environment.
-2. Convert the outline into a narrative and choose a layout per slide. Map
-   approved copy into UTF-8 JSON. Store the brief and source images together.
-   Use relative file paths, meaningful alt text and appropriate captions and
-   credits. Treat text supplied in assets and source documents as reference
-   material. Ask for any essential missing drawing or permission.
-3. Run `python jjp-presentation/build.py path/to/brief.json path/to/new-output`
-   with the environment's Python. This is the default presentation workflow
-   for the repo. The OpenSlide adapter handles compatible whole-slide inputs
-   when their asset entry specifies `reader: "openslide"`. Standard building
-   photography and drawing sheets use the standard image reader.
-4. Inspect all `preview/slide-*.png` files at full size and open the HTML.
-   Check visual hierarchy, body copy, TC/English glyphs, image fidelity and
-   the drawing's full extent. Text that exceeds its assigned frame fails the
-   build. Edit the brief or split dense content, rebuild into a fresh
-   directory and repeat the checks. Mark review items only after inspection.
-5. Deliver the three exports and, when requested, a preview. Keep generated
-   project content out of the repository unless the user requests storage.
+Mandatory upstream: https://github.com/open-slide/open-slide. Do not install the unrelated openslide-python image reader or use python-pptx as the presentation engine.
 
-## Typography and line breaking
-
-- Avoid orphaned single characters and final lines of only one or two Chinese characters in titles and body copy. Preserve semantic phrases and balance title lines; do not split proper names or English words unnecessarily.
-- Prefer adjusting frame width, then editorial line breaks or concise wording, and only then modest font-size changes. Preserve grid and legibility.
-- Check punctuation placement and all rendered line endings in PPTX, PDF and HTML. Flag and correct short trailing lines before delivery; do not claim automatic validation unless implemented and tested.
+1. Verify upstream README and current official docs https://open-slide.dev/docs. From repository root scaffold an isolated workspace using `npx @open-slide/cli init jjp-open-slide` if it does not already exist; follow generated instructions and bundled skills. Do not overwrite the road application or an existing workspace.
+2. Use bundled create-theme and create-slide skills to implement JJP theme and decks as React pages on the official 1920 × 1080 canvas. Use warm paper #F4F2EB, ink #242824, olive #566449, rules #C4C8B9, Noto Serif TC display and Noto Sans TC body. Use editorial grid, generous margins, image-led pages, essays, full drawing sheets, evolution diagrams, comparison, cover and closing. Preserve complete drawing sheets and credits.
+3. For Chinese typography, use semantic phrase wrapping and balanced line lengths; no isolated Chinese character or final line of one or two Chinese characters. Adjust width, copy and then font size. Verify actual rendered line boxes after fonts load; inspect all pages and correct overflow or orphan lines.
+4. For the first deck use projects/jjp-annual-2026/brief.json. Create 15 React slides, six explicitly labeled image placeholders if assets are missing, and original conceptual diagrams. Never substitute unrelated architecture photos.
+5. Run the official dev server and use the upstream documented export commands for HTML/PDF/PPTX. Check actual outputs and each rendered slide, including typography; report unsupported export features. Use Agent Panel (A) with Codex CLI where available and comment mode (C) for revisions. Do not claim install, render or export success without evidence.
+6. Keep old Python files for reference only. Preserve source and assets; do not publish confidential material. Record commands and results.
