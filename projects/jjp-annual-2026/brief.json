@@ -1,0 +1,197 @@
+{
+  "title": "2026 JJP 設計年刊｜照護的建築",
+  "language": "zh-Hant",
+  "slides": [
+    {
+      "layout": "cover",
+      "title": "照護的建築",
+      "body": "Architecture of Care\nJJP DESIGN ANNUAL 2026\n從醫療、長照到全齡共生的空間實踐"
+    },
+    {
+      "layout": "essay",
+      "title": "從塑山者到照護的建築",
+      "blocks": [
+        {
+          "heading": "延續年度設計論述",
+          "body": "從 2025「塑山者」對建築與環境的關注，轉向人在生命不同階段的健康、尊嚴與生活。"
+        },
+        {
+          "heading": "本年度策展命題",
+          "body": "不是醫院與長照作品的集合，而是透過 JJP 的實踐，探索照護如何成為一種建築態度。"
+        }
+      ]
+    },
+    {
+      "layout": "essay",
+      "title": "高齡社會的空間提問",
+      "blocks": [
+        {
+          "heading": "需求正在改變",
+          "body": "高齡化、慢性病照護、健康管理，以及家庭與社區支持模式，正在改變建築的使用情境。"
+        },
+        {
+          "heading": "建築如何回應",
+          "body": "從單一機能的設施，走向兼顧身體、日常、心理與社會關係的場所。"
+        }
+      ]
+    },
+    {
+      "layout": "section",
+      "title": "照護不只發生在醫院",
+      "body": "Care extends beyond healthcare.\n從治療、健康促進到全齡生活與社會共融。"
+    },
+    {
+      "layout": "evolution",
+      "title": "照護的尺度",
+      "stages": [
+        {
+          "heading": "身體",
+          "body": "醫療照護與健康促進",
+          "image": {
+            "path": "assets/care-scale-body.png",
+            "alt": "照護由中心的個人身體與醫療照護展開的圓形示意"
+          }
+        },
+        {
+          "heading": "生活",
+          "body": "長照、全齡居住與日常支持",
+          "image": {
+            "path": "assets/care-scale-life.png",
+            "alt": "由身體擴展至全齡日常生活的同心圓圖解"
+          }
+        },
+        {
+          "heading": "社會",
+          "body": "社區連結與社會共融",
+          "image": {
+            "path": "assets/care-scale-society.png",
+            "alt": "由個人到社會支持網絡的完整同心圓示意"
+          }
+        }
+      ]
+    },
+    {
+      "layout": "essay",
+      "title": "JJP 的六種照護實踐",
+      "blocks": [
+        {
+          "heading": "醫療與健康",
+          "body": "北醫第一醫療大樓、佳里奇美醫院、門諾健康管理大樓。"
+        },
+        {
+          "heading": "生活與共融",
+          "body": "東基樂齡長照園區、三芝日勝生、育成社福永續庇護園區。"
+        }
+      ]
+    },
+    {
+      "layout": "photography",
+      "title": "北醫第一醫療大樓",
+      "body": "醫療建築不只是治療的容器，也涉及城市介面、公共性與進出醫療空間的感受。",
+      "image": {
+        "path": "assets/tmu.jpg",
+        "alt": "北醫第一醫療大樓實際專案圖像；待置入經授權素材",
+        "caption": "TAIPEI MEDICAL UNIVERSITY｜素材待補"
+      }
+    },
+    {
+      "layout": "photography",
+      "title": "佳里奇美醫院",
+      "body": "以人、自然與光線的交織，探索醫療建築中明亮、可辨識且具有療癒感的公共空間。",
+      "image": {
+        "path": "assets/chimei.jpg",
+        "alt": "佳里奇美醫院實際專案圖像；待置入經授權素材",
+        "caption": "CHIMEI HOSPITAL｜素材待補"
+      }
+    },
+    {
+      "layout": "photography",
+      "title": "門諾健康管理大樓",
+      "body": "從疾病治療走向健康管理與預防，重新思考健康空間與日常生活的關係。",
+      "image": {
+        "path": "assets/mennonite.jpg",
+        "alt": "門諾健康管理大樓實際專案圖像；待置入經授權素材",
+        "caption": "MENNONITE HEALTH｜素材待補"
+      }
+    },
+    {
+      "layout": "photography",
+      "title": "東基樂齡長照園區",
+      "body": "將長照環境視為生活場所，關注高齡者的尊嚴、陪伴、日常節奏與空間感受。",
+      "image": {
+        "path": "assets/taitung-senior.jpg",
+        "alt": "東基樂齡長照園區實際專案圖像；待置入經授權素材",
+        "caption": "SENIOR LIVING｜素材待補"
+      }
+    },
+    {
+      "layout": "photography",
+      "title": "三芝日勝生",
+      "body": "全齡通用的居住環境，讓建築因應生命階段的改變；獎項正式名稱與資料待出版核對。",
+      "image": {
+        "path": "assets/sanzhi.jpg",
+        "alt": "三芝日勝生實際專案圖像；待置入經授權素材",
+        "caption": "UNIVERSAL HOUSING｜素材待補"
+      }
+    },
+    {
+      "layout": "photography",
+      "title": "育成社福永續庇護園區",
+      "body": "將社會支持與空間再利用結合，思考工作、陪伴、社區交流與永續構造。",
+      "image": {
+        "path": "assets/yucheng.jpg",
+        "alt": "育成社福永續庇護園區實際專案圖像；待置入經授權素材",
+        "caption": "SOCIAL INCLUSION｜素材待補"
+      }
+    },
+    {
+      "layout": "comparison",
+      "title": "從作品提煉照護設計原則",
+      "options": [
+        "個體的照護",
+        "群體的照護"
+      ],
+      "rows": [
+        [
+          "尊嚴 Dignity",
+          "自主與安全感",
+          "平等與可親近"
+        ],
+        [
+          "連結 Connection",
+          "家人與照護者",
+          "社區與公共生活"
+        ],
+        [
+          "自然 Nature",
+          "採光與景觀",
+          "戶外活動與生態"
+        ],
+        [
+          "適應 Adaptability",
+          "使用需求變化",
+          "全齡與長期彈性"
+        ]
+      ]
+    },
+    {
+      "layout": "essay",
+      "title": "年刊編輯與資料募集",
+      "blocks": [
+        {
+          "heading": "內容架構",
+          "body": "年度主論述、專題訪談、六個作品案例、跨案例設計方法與照護空間圖解。"
+        },
+        {
+          "heading": "必要素材",
+          "body": "經授權的建築攝影與圖面、專案故事、可核對的成果資訊、人物與使用情境。"
+        }
+      ]
+    },
+    {
+      "layout": "closing",
+      "title": "建築，作為一種照護的實踐",
+      "body": "Architecture as an Act of Care\n2026 JJP Design Annual｜策展提案初稿"
+    }
+  ]
+}
