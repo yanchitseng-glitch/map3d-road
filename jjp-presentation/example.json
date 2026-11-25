@@ -1,0 +1,14 @@
+{
+  "title": "JJP Presentation",
+  "language": "zh-Hant",
+  "slides": [
+    {"layout": "cover", "title": "JJP Presentation", "body": "庭院閱覽室\nCourtyard Reading Room"},
+    {"layout": "section", "title": "空間與動線", "body": "從南側入口到環庭廊道"},
+    {"layout": "photography", "title": "庭院一側", "body": "深簷遮蔽廊道，閱覽座席面向庭樹。", "image": {"path": "assets/courtyard.jpg", "alt": "混凝土廊道面向庭院及閱覽室", "fit": "cover", "caption": "庭院視角"}},
+    {"layout": "essay", "title": "庭院是閱覽室的採光核心", "blocks": [{"heading": "採光", "body": "座席沿庭院布置，深簷減少直射光。"}, {"heading": "動線", "body": "南側入口連接環廊，環廊串聯兩側閱覽區。"}]},
+    {"layout": "drawing", "title": "一層平面", "body": "南側入口通往有頂廊道。", "image": {"path": "assets/plan.png", "alt": "含圖框與註記的一層平面全圖", "caption": "概念平面圖"}},
+    {"layout": "evolution", "title": "中央庭院的形成", "stages": [{"heading": "配置量體", "body": "確定閱覽空間的邊界。", "image": {"path": "assets/stage-1.png", "alt": "完整矩形量體"}}, {"heading": "開出庭院", "body": "保留四周有頂廊道。", "image": {"path": "assets/stage-2.png", "alt": "中央挖空後的環形配置"}}]},
+    {"layout": "comparison", "title": "中央庭院與側庭", "options": ["A 中央庭院", "B 側庭"], "rows": [["採光", "兩側面向庭院", "臨庭側直接採光"], ["動線", "環廊串聯閱覽區", "主廊串聯各區"], ["配置取捨", "環廊占用較多室內面積", "保留較完整的室內空間"]]},
+    {"layout": "closing", "title": "保留中央庭院方案", "body": "下一階段比較深簷尺寸及座席採光。"}
+  ]
+}

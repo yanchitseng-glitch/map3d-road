@@ -1,0 +1,10 @@
+{
+  "size": [1280, 720],
+  "margin": 72,
+  "paper": "#F4F2EB",
+  "ink": "#242824",
+  "accent": "#566449",
+  "rule": "#C4C8B9",
+  "display": "Noto Serif CJK TC",
+  "body": "Noto Sans CJK TC"
+}
