@@ -1,0 +1,49 @@
+name: JJP OpenSlide build and visual QA
+on:
+  push:
+    branches: [jjp-presentation-skill]
+    paths:
+      - 'jjp-open-slide/**'
+      - '.github/workflows/jjp-open-slide.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-and-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: jjp-open-slide/package-lock.json
+      - name: Install official OpenSlide dependencies
+        working-directory: jjp-open-slide
+        run: npm install --no-audit --no-fund
+      - name: Build official OpenSlide static HTML
+        working-directory: jjp-open-slide
+        run: npm run build
+      - name: Install browser for visual QA and exports
+        working-directory: jjp-open-slide
+        run: npx playwright install --with-deps chromium
+      - name: Start OpenSlide visual editor
+        working-directory: jjp-open-slide
+        run: |
+          nohup npm run dev -- --host 127.0.0.1 > /tmp/open-slide-dev.log 2>&1 &
+          for i in {1..50}; do curl -fsS http://127.0.0.1:5173/ >/dev/null && exit 0; sleep 2; done
+          cat /tmp/open-slide-dev.log
+          exit 1
+      - name: Inspect all 15 slides and export through official UI
+        working-directory: jjp-open-slide
+        run: node qa.mjs
+      - name: Upload OpenSlide HTML build and QA exports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jjp-2026-openslide-build
+          path: |
+            jjp-open-slide/dist/
+            jjp-open-slide/qa-output/
+          if-no-files-found: warn
